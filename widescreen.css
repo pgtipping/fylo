@@ -1,0 +1,359 @@
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+html, body {
+  background-color: #0B1226;
+  font-size: 14px;
+  font-family: 'Raleway';
+  color: #f2f2f2;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100vw 60vh;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* LEFT SECTION */
+.logoandicons-container {
+  background-color: #223773;
+  border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+  margin-left: 15%;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin-top: 14%;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img {
+  height: 70%;
+  margin-top: 2vh;
+}
+
+.icons {
+  background-color: #0B1226;
+  padding: 4%;
+  position: relative;
+  width: fit-content;
+  height: 40px;
+  border-radius: .5rem;
+  margin-right: 4%;
+}
+
+.svg, .logo {
+  margin: 5%;
+}
+
+/* END OF LEFT SECTION */
+/* RIGHT SECTION */
+.usage-box {
+  display: flex;
+  background-color: #223773;
+  margin-left: 50%;
+  padding: 5%;
+  margin-top: 16.5%;
+  position: absolute;
+  border-radius: 0.5rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 25%;
+  width: 45%;
+}
+
+.usage {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.GB-used-tag {
+  color: #fff;
+}
+
+.scale {
+  color: #fff;
+  justify-content: flex-start;
+  display: inline-flex;
+  width: 100%;
+}
+
+.max {
+  margin-left: 77%;
+}
+
+input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 10px;
+  border: 2px solid #0c122c;
+  outline: none;
+  background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, #0B1226 80%, #0B1226 100%);
+}
+
+/* CHROME SLIDER STYLING */
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #664AFF;
+  cursor: pointer;
+}
+
+/* MOZILLA SLIDER STYLING */
+input::-moz-range-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #664AFF;
+  cursor: pointer;
+}
+
+.callout {
+  position: absolute;
+  width: fit-content;
+  height: 10vh;
+  padding: 0px 15px;
+  background: #fff;
+  color: #000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 8px 8px 0 8px;
+  border: 1px solid;
+  margin-left: 45%;
+  margin-top: -30%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.callout:before {
+  content: '';
+  position: absolute;
+  bottom: -22px;
+  border-top: 25px solid #fff;
+  border-left: 25px solid transparent;
+  border-right: 1px solid;
+  right: 0;
+}
+
+.GB-left-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.GB {
+  font-weight: 400;
+  color: #909297;
+  line-height: 3;
+  vertical-align: top;
+  padding: 5px;
+}
+
+/* END OF RIGHT SECTION */
+.attribution {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  background-color: #223773;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA STYLING */
+@media screen and (max-width:1085px) {
+  .max {
+    margin-left: 74%;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .svg, .logo {
+    margin: 3%;
+  }
+
+  .logoandicons-container {
+    margin-top: 18%;
+  }
+
+  .max {
+    margin-left: 70%;
+  }
+
+  .scale {
+    display: inline-flex;
+  }
+
+  .usage-box {
+    margin-top: 21.5%;
+  }
+
+  .callout {
+    margin-top: -40%;
+    margin-left: 38%;
+  }
+
+  .img {
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width:832px) {
+  .max {
+    margin-left: 67%;
+  }
+
+  .logoandicons-container {
+    margin-top: 22%;
+  }
+
+  .usage-box {
+    margin-top: 25.5%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .max {
+    margin-left: 64%;
+  }
+
+  .callout {
+    margin-top: -55%;
+    margin-left: 31%;
+  }
+
+  .img {
+    height: 65%;
+  }
+}
+
+@media screen and (max-width:694px) {
+  .max {
+    margin-left: 60%;
+  }
+
+  .callout {
+    margin-top: -50%;
+    margin-left: 25%;
+  }
+
+  .logoandicons-container {
+    margin-top: 27%;
+    height: 25%;
+    padding-left: 1%;
+  }
+
+  .usage-box {
+    margin-top: 32.5%;
+    padding: 3%;
+    height: 18%;
+  }
+
+  .icons {
+    height: 6vh;
+    padding: 2.5%;
+  }
+}
+
+@media screen and (max-width:645px) {
+  .callout {
+    margin-top: -60%;
+  }
+}
+
+@media screen and (max-width:595px) {
+  .callout {
+    margin-top: -40%;
+    margin-left: 50%;
+    width: 26vw;
+    padding: 0;
+  }
+
+  .usage-box {
+    margin-top: 53vh;
+    margin-left: 15%;
+    width: 70vw;
+    height: 22vh;
+  }
+
+  .max {
+    margin-left: 72%;
+  }
+
+  .logoandicons-container {
+    width: 70vw;
+    padding-left: 5%;
+    margin-top: 25vh;
+  }
+
+  .svg, .logo {
+    margin: 2%;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .callout {
+    margin-top: 28vh;
+    margin-left: auto;
+    border-radius: 8px;
+    width: 140px;
+  }
+
+  .callout::before {
+    border: 0;
+  }
+
+  .GB {
+    font-size: 11px;
+  }
+
+  .usage-box {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .max {
+    margin-left: 63%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html, body {
+    background-image: url("images/bg-mobile.png");
+    background-size: auto;
+  }
+
+  .icons {
+    height: 80%;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .icons {
+    height: 5vh;
+  }
+}
